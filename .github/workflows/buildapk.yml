@@ -1,9 +1,13 @@
 name: Build APK
 
+# on:
+#   issues:
+#     types:
+#       - opened
+
 on:
-  issues:
-    types:
-      - opened
+  workflow_dispatch: # 手动触发配置
+
 
 jobs:
   release:
